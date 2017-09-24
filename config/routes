@@ -6,6 +6,8 @@
 
 / HomeR GET POST
 
+/api/happy HappyR GET
+
 /comments CommentR POST
 
 /profile ProfileR GET

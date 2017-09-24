@@ -33,6 +33,7 @@ getHomeR = do
         setTitle "Welcome To Yesod!"
         $(widgetFile "homepage")
 
+
 postHomeR :: Handler Html
 postHomeR = do
     ((result, formWidget), formEnctype) <- runFormPost sampleForm
@@ -46,6 +47,8 @@ postHomeR = do
         aDomId <- newIdent
         setTitle "Welcome To Yesod!"
         $(widgetFile "homepage")
+
+
 
 sampleForm :: Form FileForm
 sampleForm = renderBootstrap3 BootstrapBasicForm $ FileForm
